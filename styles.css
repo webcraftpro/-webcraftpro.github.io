@@ -1,0 +1,113 @@
+  /* Estilos generales */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/verduras-queso-cerca-pasta-especias.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+    /* Estilos para las secciones ... */
+    .section h2 {
+        font-size: 50px; /* Cambia este valor al tamaño deseado */
+        color: #000000;
+      }
+
+  /* Estilos para el menú de navegación */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  
+  
+}
+
+/* Estilos para el contenido debajo del menú */
+.content {
+  padding-top: 100px; /* Ajusta este valor para dejar espacio para el menú */
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .logo h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 30px; /* Cambia este valor al tamaño deseado */
+  }
+
+  /* Estilos para las secciones */
+  .section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .item {
+    
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para recortar las imágenes */
+  }
+
+  .item img {
+    width: 350px; /* Establece un tamaño fijo para las imágenes */
+    height: 350px; /* Establece un tamaño fijo para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio y se recorten si es necesario */
+  }
+
+/* Estilos para el texto dentro de los elementos <p> */
+.section .item p {
+    font-size: 24px; /* Cambia este valor al tamaño deseado */
+    color: #654321; /* Cambia este valor al color deseado */
+    font-weight: bold;
+  }
+  
+  /* Media query para hacer el diseño responsive */
+  @media (max-width: 768px) {
+    .navigation {
+      padding: 5px 0;
+    }
+
+    .navigation a {
+      margin: 0 10px;
+    }
+
+    .item {
+      margin: 10px 5px;
+    }
+  }
